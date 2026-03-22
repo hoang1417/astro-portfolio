@@ -18,6 +18,9 @@ const projects = (await getCollection('work'))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0, 4);
 
+import "@fortawesome/fontawesome-free/css/all.min.css";
+// Font Awesomes: https://fontawesome.com/search?f=classic&s=regular&ic=free-collection
+
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 ---
@@ -28,13 +31,13 @@ const projects = (await getCollection('work'))
 			<header class="hero">
 				<Hero
 					title="Hello, my name is Henry Le"
-					tagline="I am a Technical Business Analyst, passionate about solving complex problems with innovative solutions."
+					tagline="I am a Technical Business Analyst, who has a strong passionate about solving complex problems with innovative solutions."
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><i class="fa-solid fa-compass" style="font-size: 1.33em"></i> Business Analysis</Pill>
+						<Pill><i class="fa-solid fa-chart-bar" style="font-size: 1.33em"></i> Data Analysis</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Software Implementation</Pill>
 					</div>
 				</Hero>
 
