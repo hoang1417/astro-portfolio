@@ -40,13 +40,6 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 						<Pill><Icon icon="code" size="1.33em" /> Software Implementation</Pill>
 					</div>
 				</Hero>
-
-				<img
-					alt="Henry Le smiling in a grey suit"
-					width="240"
-					height="310"
-					src="/assets/Henry_avatar.jpeg"
-				/>
 			</header>
 
 			<Skills />
@@ -55,8 +48,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Projects</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Projects</h3>
+					<p>Some featured projects from my past experience</p>
 				</header>
 
 				<div class="gallery">
@@ -81,17 +74,17 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Technical Skills</h3>
 					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
+						Specialised in Software Development and Data Analytics, I possess skills required to transform business process and increase business performance
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							['Data Wraggling & ETL (SQL, Python, Power Query)', 'Data Processing & Visualisation (Power BI, SQL, DAX)',  'Data Management (MS SQL Server, PostgreSQL, MySQL, MongoDB)', 
+								'Programming Languages (Python, R, JavaScript, Excel VBA)', 'Process Diagramming (Diagrams.net, Lucidchart, Figma)', 'Collaboration Tools (MS Office, Jira - Confluence, Git, Jupyter Notebook)'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
@@ -241,6 +234,9 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 		color: var(--gray-300);
 		background: var(--gradient-subtle);
 		box-shadow: var(--shadow-sm);
+		p {
+			margin: 0 1.5rem;
+		}
 	}
 
 	@media (min-width: 50em) {
