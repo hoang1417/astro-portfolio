@@ -4,8 +4,9 @@ publishDate: 2023-11-01 00:00:00
 img: /assets/CITES-background-image.jpg
 img_alt: Convention on International Trade in Endangered Species of Wild Fauna and Flora
 description: |
-  Using public data from Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) in the period of 2013-2015, 
-  this project aims to identify trading trends and abnormal trading patterns.
+  Using public data from Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES),
+  this project analyses global wildlife trade data to identify trends, concentration patterns, and potential risks
+  in endangered species trading.
 tags:
   - Data Analysis
   - Data Visualisation
@@ -13,52 +14,87 @@ tags:
 ---
 
 #### Overview
-- **Problem**: analyse trading data to identify trends and patterns
-- **Approach**: apply data analysis techniques to examine data in different angles and investigate findings
-- **Tools**: SQL, Tableau, Excel
-- **Outcome**: identified key trends, patterns, and the reasoning behind them
+- **Problem**: understand global wildlife trade patterns and identify unusual concentration or potential risk areas in endangered species trading  
+- **Approach**: applied exploratory data analysis and hypothesis-driven investigation to examine trade data across multiple dimensions (species, geography, and product types)  
+- **Tools**: SQL, Tableau, Excel  
+- **Outcome**: uncovered key trends, highly concentrated trade patterns, and underlying drivers behind large trade volumes  
+
+---
 
 #### Definitions
-Specicies protection levels:
+Species protection levels:
 - Appendix-I: the most endangered species, trades are exempted only for certain purposes (e.g. scientific research)
-- Appendix-II: not necessarily now threatened with extinction but that may become so unless trade is closely controlled
-- Appendix-III: regulated for trading but still needs international cooperation to prevent unsustainable or illegal exploitation
+- Appendix-II: not necessarily now threatened with extinction but may become so unless trade is closely controlled
+- Appendix-III: regulated for trading but still requires international cooperation to prevent unsustainable or illegal exploitation
 
-Biological hierarchy: species -> genus -> family -> order -> class
+Biological hierarchy: species → genus → family → order → class
 
+---
 
 #### Overall trend
-Illustrating endangered species trade quantity, Figure 1 highlights that trade quantity was predominated by Appendix-II species, whihle trades related to Appendix I and Appendix III are insignificant 
-(contributing only 0.3% of total trade quantity throughout the years). 
-Moreover, the trade quantities were highly flutuated over the years, with more than 1,000M kg in 2013, followed by only about 150M kg in 2014 in trade for Appendix-II species.
+Illustrating endangered species trade quantity, Figure 1 shows that trade volume is overwhelmingly dominated by Appendix-II species, while Appendix-I and Appendix-III trades remain negligible (only ~0.3% of total trade quantity across the years).
+
+A key observation is the **high volatility in trade volume**, with more than 1,000M kg recorded in 2013, followed by a sharp drop to approximately 150M kg in 2014.
 
 ![ Endangered species trade quantities worldwide](/assets/CITES-endangered-species.png)
 <center>Figure 1. Endangered species trade quantities worldwide</center>
 
-By looking at the total trade quantities over time, it is evident that there was a huge drop in 2014 from the top value in 2013, then the quantity bounced back clearly in 2015 but still was just about half of the amount in 2013 (Figure 1). 
-The trade movement reveals a potential downtrend even though it is not stable throughout the years. From a conservation perspective, this is a good sign that wild species are being traded less over time.
+This sharp decline and partial recovery in 2015 indicate that global wildlife trade is **not stable and may be influenced by external factors such as regulation, market demand, or reporting changes**.  
+Overall, the data suggests a **potential downward trend**, which could indicate improved control measures, although further validation would be required.
+
+---
 
 #### Further data investigation
-Beyond the overall trend, another analysis was conducted to reveal deeper insights from the highly centralised trade distribution of Appendix II species.
+To better understand the dominance of Appendix-II species, further analysis was conducted to examine **trade concentration across species and countries**.
 
-As demonstrated in Figure 2, within Appendix II species, the trades were highly concentrated for certain endangered genera - the top two genera (Gonystylus and Euphorbia) contributed more than 80% of the trades. 
-Additionally, regarding importer countries, a few countries account for most of the import - Switzerland stands for over 85% of trade, followed by Netherlands with 5.18%, while the rest have minor figures.
+As shown in Figure 2, trade is **highly concentrated within a small number of genera**.  
+The top two genera (Gonystylus and Euphorbia) account for about 80% of total trade volume.
+
+At the country level, imports are also heavily concentrated:
+- Switzerland accounts for over 85% of total imports  
+- The Netherlands follows with ~5%  
+- Other countries contribute only marginally  
 
 ![Appendix II Species imported and Countries importing worldwide](/assets/CITES-imported-species.png)
 Figure 2. Appendix II Species imported and Countries importing worldwide.
 
-The investigation reveals that the trade domination of Appendix II species was imported by a particular country (Switzerland), likely for specific genera (Gonystylus and Euphorbia). It is interesting to further dive deeper into the data to explore whether there is any connection between Switzerland and the two genera.
+This reveals a **significant concentration risk**, where global trade volume is dominated by specific species and a single importing country.
+
+---
+
+#### Hypothesis validation
+Based on the above findings, a hypothesis was formed:
+
+> Switzerland’s dominant trade volume is closely linked to specific genera and product types.
+
+To validate this, a treemap analysis was performed to examine the relationship between **importing countries, species, and product forms (terms)**.
 
 ![Importing countries divided by Appendix II species and term distribution](/assets/CITES-imported-species-by-terms.png)
 Figure 3. Importing countries divided by Appendix II species and term distribution
 
-Using another analysis approach, a treemap is used to examine the relation between importer countries and the imported species, plus the product form, or also known as term (Figure 3). From the graph, it can be observed that there is a strong correlation between the top one importer country (Switzerland) with the top two imported genera (Gonystylus, Euphorbia), accounting for most of the total international trades. This analysis confirms our hypothesis aforementioned that Switzerland was importing concentratedly specific genera. 
+The results confirm a **strong correlation between Switzerland and the two dominant genera (Gonystylus and Euphorbia)**, primarily in the form of:
+- timber  
+- timber pieces  
+- wax  
 
-Furthermore, it is recognisable that “timber pieces”, “wax”, and “timber” are contributing to the top trades from Switzerland of the two identified genera (which are plants). 
-This fact shows that the notable pattern in trade quantities could be just because of the nature of the product type, where there is high demand in certain industries, in a particular country. 
-According to Schafer (2022), Swiss timber-frame construction is world-leading and growing, backed by research activity from Swiss federal institutions. 
-These plant-based products might have huge markets which require a tremendous amount of quantities.
+This suggests that the observed trade concentration is **driven more by industrial demand for specific plant-based products rather than broad biodiversity exploitation**.
 
-In general, the analysis identified the overall downtrend for international trades of endangered species and which products, countries were importing the most in 2013-2015 period. 
-Especially, it is notable that a big portion of trades was focused on plant-based species, in the form of timber, wax, and wood. 
-The findings recommend that trade analysis needs to be more specific on context rather than just focusing on the absolute number of trade quantities.
+---
+
+#### Key insights
+- Global wildlife trade is **highly concentrated**, both in terms of species and importing countries  
+- A small number of genera contribute disproportionately to total trade volume (>80%)  
+- Switzerland plays a **dominant role in global imports**, indicating potential dependency on specific supply chains  
+- Trade patterns are strongly influenced by **product type and industry demand (e.g. timber-related products)**  
+- Large fluctuations in trade volume suggest **external influences such as regulation or market conditions**
+
+---
+
+#### Impact & relevance
+Although this is an academic project, the analysis demonstrates how data can support:
+
+- **Policy and regulatory monitoring** by identifying unusual concentration or dependency in trade flows  
+- **Risk identification**, where over-reliance on specific species or regions may indicate sustainability concerns  
+- **Context-aware analysis**, showing that trade volume alone is insufficient without understanding product type and industry demand  
+
+Overall, this project highlights the importance of **combining data analysis with domain context** to derive meaningful and actionable insights.
