@@ -35,11 +35,11 @@ const { title, description } = Astro.props;
 			:root {
 				--_placeholder-bg: linear-gradient(transparent, transparent);
 				--bg-image-main: url('/assets/backgrounds/bg-main-light-800w.jpg');
-				--bg-image-main-curves: url('/assets/backgrounds/bg-main-light.svg');
+				--bg-image-main-curves: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('/assets/backgrounds/bg-main-light.svg');
+				--bg-svg-blend-mode: normal;
 				--bg-image-subtle-1: var(--_placeholder-bg);
 				--bg-image-subtle-2: var(--_placeholder-bg);
 				--bg-image-footer: var(--_placeholder-bg);
-				--bg-svg-blend-mode: overlay;
 				--bg-blend-mode: darken;
 				--bg-image-aspect-ratio: 2.25;
 				--bg-scale: 1.68;
