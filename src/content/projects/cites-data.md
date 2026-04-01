@@ -5,7 +5,7 @@ publishDate: 2023-11-01 00:00:00
 img: /assets/CITES-background-image.jpg
 img_alt: Convention on International Trade in Endangered Species of Wild Fauna and Flora
 description: |
-  In this personal data analysis project, I explored public CITES trade data using SQL, Tableau, and Excel to uncover patterns, concentration risks, and underlying drivers in global endangered species trade.
+  In this personal data analysis project, I explored public CITES trade data using SQL and Tableau to uncover patterns, concentration risks, and underlying drivers in global endangered species trade.
 tags:
 - Data Analysis
 - Data Visualisation
