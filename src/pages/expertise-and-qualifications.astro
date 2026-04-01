@@ -4,7 +4,7 @@ import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Icon from '../components/Icon.astro';
-import Pill from '../components/Pill.astro';
+import ImagePopup from '../components/ImagePopup.astro';
 ---
 
 <BaseLayout 
@@ -65,9 +65,22 @@ import Pill from '../components/Pill.astro';
 			<section>
 				<h2 class="section-title">Certifications</h2>
 				<div class="content">
-					<p>Microsoft Fabric Analytics Engineer - AI Skills Challenge (Microsoft)</p>
-					<p>Agile Project Management - Scrum, Kanban & XP (GenMan Solutions)</p>
-					<p>Product-Led Certification (Pendo)</p>
+					<ImagePopup 
+						items={[
+							{
+								label: "Microsoft Fabric Analytics Engineer - AI Skills Challenge (Microsoft)",
+								image: "/assets/Involvio.png"
+							},
+							{
+								label: "Agile Project Management - Scrum, Kanban & XP (GenMan Solutions)",
+								image: "/assets/Involvio.png"
+							},
+							{
+								label: "Product-Led Certification (Pendo)",
+								image: "/assets/Involvio.png"
+							}
+						]}`
+					/>
 				</div>
 			</section>
 
@@ -141,6 +154,9 @@ import Pill from '../components/Pill.astro';
 		}
 		p.indent {
 			text-indent: 0; /* just offset the default indent */
+		}
+		button {
+			text-indent: -1.5rem;
 		}
 	}
 
