@@ -4,55 +4,90 @@ import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Henry Le | Expertise & Qualifications" description="Detailed expertise and qualifications of Henry Le">
+<BaseLayout 
+  title="Henry Le | Technical Business Analyst - Data & Operations Specialist" 
+  description="Henry Le helps manufacturing and distribution businesses improve operations through data analytics, system integration, and business process optimisation."
+>
 	<div class="stack gap-20">
 		<main class="wrapper about">
-			<Hero title="" tagline="">
-			</Hero>
 			
+			<Hero 
+				title="Technical Business Analyst | Data & Operations Specialist"
+				tagline="I help manufacturing, retail, and distribution businesses improve operations and customer management through data analytics, ERP, and system integration."
+			/>
+
 			<section>
 				<h2 class="section-title">Experience</h2>
 				<div class="content">
-					<p>ICT Business Analysis: 9+ years</p>
-					<p>Business Data Analysis: 4+ years</p>
-					<p>Software Development: 11+ years</p>
+					<p><strong>9+ years</strong> in ICT Business Analysis delivering system and process improvements</p>
+					<p><strong>4+ years</strong> in Data Analytics driving reporting automation and insights</p>
+					<p><strong>11+ years</strong> in Software Development across enterprise and business systems</p>
 				</div>
 			</section>
+
 			<section>
-				<h2 class="section-title">Skills</h2>
+				<h2 class="section-title">Core Capabilities</h2>
 				<div class="content">
-					<p>Data Analysis & Analytical Tools</p>
-					<p>Business Diagram and Modelling Tool</p>
-					<p>Software System Architecture</p>
-					<p>System Integration and API Architecture</p>
+					<p><strong>Data Analytics & Decision Support</strong></p>
+					<p class="indent">Transform raw data into actionable insights using BI tools and structured data models</p>
+					<p><strong>Business Process Optimisation</strong>
+					<p class="indent">Analyse and redesign workflows to reduce manual effort and inefficiencies</p>
+					<p><strong>ERP & CRM Systems</strong>
+					<p class="indent">Implement and enhance enterprise systems to improve operations and customer management</p>
+					<p><strong>System Architecture & Integration</strong></p>
+					<p class="indent">Design scalable systems and API integrations across platforms</p>
+					<p><strong>Technical Business Analysis</strong></p>
+					<p class="indent">Bridge business needs with technical implementation across cross-functional teams</p>
 				</div>
 			</section>
 			
 			<section>
-				<h2 class="section-title">Industries</h2>
+				<h2 class="section-title">Industry Focus</h2>
 				<div class="content">
-					<p>Logistics</p>
-					<p>E-commerce</p>
-					<p>Manufacturing</p>
+					<p><strong>Logistics</strong>: Shipment tracking, Shipping line analysis, route optimisation, and system integration</p>
+					<p><strong>Retail & Wholesale</strong>: Order management, pricing, customer lifecycle, and sales operations</p>
+					<p><strong>E-commerce</strong>: Platform integration, data flows, and digital order processing</p>
+					<p><strong>Manufacturing</strong>: Quality control, production processes, and operational efficiency</p>
 				</div>
 			</section>
 
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>Master of Business Administration (MBA)- Western Sydney University</p>
-					<p>Bachelor of Engineering (Computer Science) - Vietnam Nation University of Technology</p>
+					<p><strong>MBA</strong> from Western Sydney University</p>
+					<p><strong>Bachelor of Engineering in Computer Science</strong> from Vietnam National University of Technology</p>
 				</div>
 			</section>
 
 			<section>
-				<h2 class="section-title">Certificates</h2>
+				<h2 class="section-title">Certifications</h2>
 				<div class="content">
-					<p>AI Skills Challenge: Fabric Analytics Engineer - Microsoft</p>
-					<p>Agile Project Management: Agile, Scrum, Kanban & XP - GenMan Solutions</p>
-					<p>Product-led Certification - Pendo</p>
+					<p>Microsoft Fabric Analytics Engineer - AI Skills Challenge (Microsoft)</p>
+					<p>Agile Project Management - Scrum, Kanban & XP (GenMan Solutions)</p>
+					<p>Product-Led Certification (Pendo)</p>
 				</div>
 			</section>
+
+			<section>
+				<h2 class="section-title">How I Create Value</h2>
+				<div class="content">
+					<p>• Reduce manual reporting and operational overhead through automation</p>
+					<p>• Improve data visibility for faster and more accurate decision-making</p>
+					<p>• Align business requirements with scalable technical solutions</p>
+					<p>• Deliver practical, business-focused outcomes—not just technical outputs</p>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section-title">Selected Impact</h2>
+				<div class="content">
+					<p><strong>Automated Reporting System</strong>: Developed automated data processing and reporting system to update customers regarding the company service's status which saved 10% of sales operation hours every week.</p>
+					<p><strong>Automated Shipment Information Update</strong>: Built automation programs using Python, Azure Function App, Azure Logic App, and Azure infrastructure to update Shipment information from external data sources which saved 20% logistics operation hours every week and gained near real-time data update cadence.</p>
+					<p><strong>Operational Efficiency Improvement</strong>: Implemented and rolled out the new core logistics system to ASEAN countries that shortened average delivery lead time by 20%.</p>
+					<p><strong>Process Digitalisation</strong>: Digitalised order form generation process involving multiple stakeholders like supplier managers, sales, logistics in a centralised and robust platform which reduced 30% of communication overhead.</p>
+				</div>
+			</section>
+
 		</main>
 
 		<ContactCTA />
@@ -77,6 +112,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		flex-direction: column;
 		gap: 0.5rem;
 		color: var(--gray-200);
+		p {
+  			text-indent: -1.5rem;
+		}
+		p.indent {
+			margin-left: 1.5rem;
+		}
 	}
 
 	.section-title {
