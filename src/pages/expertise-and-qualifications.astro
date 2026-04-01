@@ -2,6 +2,9 @@
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import Icon from '../components/Icon.astro';
+import Pill from '../components/Pill.astro';
 ---
 
 <BaseLayout 
@@ -13,30 +16,30 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			
 			<Hero 
 				title="Technical Business Analyst | Data & Operations Specialist"
-				tagline="I help manufacturing, retail, and distribution businesses improve operational efficiency, automate reporting, and enhance customer management through data analytics, process improvements, and system integration."
+				tagline="I help manufacturing, retail, and distribution businesses improve operational efficiency, automate reporting, and gain real-time visibility through automation, data analytics, and system integration."
 			/>
 
 			<section>
 				<h2 class="section-title">Experience</h2>
 				<div class="content">
-					<p><strong>9+ years</strong> in ICT Business Analysis delivering system and process improvements</p>
-					<p><strong>4+ years</strong> in Data Analytics driving reporting automation and insights</p>
-					<p><strong>11+ years</strong> in Software Development across enterprise and business systems</p>
+					<p><strong>9+ years</strong> in <strong><i>ICT Business Analysis</i></strong> delivering system and process improvements</p> 
+					<p><strong>4+ years</strong> in <strong><i>Data Analytics</i></strong> driving reporting automation and insights</p>
+					<p><strong>11+ years</strong> in <strong><i>Software Development</i></strong> across enterprise and business systems</p>
 				</div>
 			</section>
 
 			<section>
 				<h2 class="section-title">Core Capabilities</h2>
 				<div class="content">
-					<p><strong>Data Analytics & Decision Support</strong></p>
+					<p><strong>Data Analytics & Decision Support (SQL, Power BI)</strong> <Icon icon="speedometer" size="1.33em"/></p>
 					<p class="indent">Transform raw data into actionable insights using BI tools and structured data models</p>
-					<p><strong>Business Process Optimisation</strong>
+					<p><strong>Business Process Optimisation</strong> <Icon icon="network" size="1.33em"/></p>
 					<p class="indent">Analyse and redesign workflows to reduce manual effort and inefficiencies</p>
-					<p><strong>ERP & CRM Systems</strong>
+					<p><strong>ERP & CRM Systems (SAP, Microsoft ecosystem)</strong> <Icon icon="warehouse" size="1.33em" /></p>
 					<p class="indent">Implement and enhance enterprise systems to improve operations and customer management</p>
-					<p><strong>System Architecture & Integration</strong></p>
+					<p><strong>System Architecture & Integration (Azure)</strong> <Icon icon="database" size="1.33em" /></p>
 					<p class="indent">Design scalable systems and API integrations across platforms</p>
-					<p><strong>Business & Systems Analysis</strong></p>
+					<p><strong>Business & Systems Analysis</strong> <Icon icon="handshake" size="1.33em" /></p>
 					<p class="indent">Bridge business needs with technical implementation across cross-functional teams</p>
 				</div>
 			</section>
@@ -44,10 +47,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			<section>
 				<h2 class="section-title">Industry Focus</h2>
 				<div class="content">
-					<p><strong>Logistics</strong>: Shipment tracking, Shipping line analysis, route optimisation, and system integration</p>
-					<p><strong>Retail & Wholesale</strong>: Order management, pricing, customer lifecycle, and sales operations</p>
-					<p><strong>E-commerce</strong>: Platform integration, data flows, and digital order processing</p>
-					<p><strong>Manufacturing</strong>: Quality control, production processes, and operational efficiency</p>
+					<p><strong>Logistics <Icon icon="truck" size="1.33em" /></strong>: Shipment tracking, Shipping line analysis, route optimisation, and system integration</p>
+					<p><strong>Retail & Wholesale <Icon icon="store-front" size="1.33em" /></strong>: Order management, pricing, customer lifecycle, and sales operations</p>
+					<p><strong>E-commerce <Icon icon="shopping-cart" size="1.33em" /></strong>: Platform integration, data flows, and digital order processing</p>
+					<p><strong>Manufacturing <Icon icon="factory" size="1.33em" /></strong>: Quality control, production processes, and operational efficiency</p>
 				</div>
 			</section>
 
@@ -81,11 +84,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			<section>
 				<h2 class="section-title">Selected Impact</h2>
 				<div class="content">
-					<p><strong>Automated Reporting System</strong>: Developed automated data processing and reporting system to update customers regarding the company service's status which saved 10% of sales operation hours every week.</p>
-					<p><strong>Automated Shipment Information Update</strong>: Built automation programs using Python, Azure Function App, Azure Logic App, and Azure infrastructure to update Shipment information from external data sources which saved 20% logistics operation hours every week and gained near real-time data update cadence.</p>
-					<p><strong>Operational Efficiency Improvement</strong>: Implemented and rolled out the new core logistics system to ASEAN countries that shortened average delivery lead time by 20%.</p>
-					<p><strong>Process Digitalisation</strong>: Digitalised order form generation process involving multiple stakeholders like supplier managers, sales, logistics in a centralised and robust platform which reduced 30% of communication overhead.</p>
-				</div>
+					<div class="capability">
+						<p><strong>Automated Reporting System</strong></p>
+						<p class="indent">Reduced sales operations workload by 12% by implementing automated reporting for real-time service status updates (order status, shipping arrival time, delivery status, etc.).</p>
+					</div>
+
+					<div class="capability">
+						<p><strong>Shipment Tracking Automation</strong></p>
+						<p class="indent">Reduced logistics operations effort by 20% and enabled near real-time shipment visibility by building automated data integration with shipping lines and data providers.</p>
+					</div>
+
+					<div class="capability">
+						<p><strong>Logistics System Rollout</strong></p>
+						<p class="indent">Improved operational efficiency and reduced delivery lead time by 15% by implementing and scaling a core logistics system across ASEAN countries.</p>
+					</div>
+
+					<div class="capability">
+						<p><strong>Process Digitalisation</strong></p>
+						<p class="indent">Reduced communication overhead by over 30% by digitising multi-stakeholder order workflows into a centralised platform.</p>
+					</div>
+				<div class="content">
+			</div>
 			</section>
 
 		</main>
@@ -121,7 +140,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   			text-indent: -1.5rem;
 		}
 		p.indent {
-			margin-left: 1.5rem;
+			text-indent: 0; /* just offset the default indent */
 		}
 	}
 
