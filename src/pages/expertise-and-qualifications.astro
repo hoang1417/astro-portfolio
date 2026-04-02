@@ -57,8 +57,18 @@ import ImagePopup from '../components/ImagePopup.astro';
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p><strong>MBA</strong> from Western Sydney University</p>
-					<p><strong>Bachelor of Engineering in Computer Science</strong> from Vietnam National University of Technology</p>
+					<ImagePopup 
+						items={[
+							{
+								content: "<strong>MBA</strong> from Western Sydney University",
+								image: "/assets/certificates/MBA - Master of Business Administration.jpg"
+							},
+							{
+								content: "<strong>Bachelor of Engineering in Computer Science</strong> from Vietnam National University of Technology",
+								image: "/assets/certificates/Bachelor of Engineering in Computer Science.jpg"
+							}
+						]}
+					/>
 				</div>
 			</section>
 
@@ -68,18 +78,18 @@ import ImagePopup from '../components/ImagePopup.astro';
 					<ImagePopup 
 						items={[
 							{
-								label: "Business Analysis Fundamentals - ECBA, CCBA, CBAP endored (The BA Guide)",
+								content: "<strong>Business Analysis Fundamentals</strong> - ECBA, CCBA, CBAP endorsed (The BA Guide)",
 								image: "/assets/certificates/Business Analysis Fundamentals - The BA Guide.png"
 							},
 							{
-								label: "Product-led Certified (Pendo)",
+								content: "<strong>Product-led Certified</strong> (Pendo)",
 								image: "/assets/certificates/Product-led Certified - Pendo.png"
 							},
 							{
-								label: "AI Job Simulation (Cognizant)",
+								content: "<strong>AI Job Simulation</strong> (Cognizant)",
 								image: "/assets/certificates/AI Job Simulation - Cognizant.png"
 							}
-						]}`
+						]}
 					/>
 				</div>
 			</section>
