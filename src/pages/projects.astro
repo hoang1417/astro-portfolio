@@ -16,35 +16,6 @@ const projects = (await getCollection('projects')).sort(
 	description="Learn about Henry Le's most featured projects"
 >
 	<div class="stack gap-20">
-		<!-- Technical Skills moved here -->
-		<section class="section with-background bg-variant wrapper">
-			<header class="section-header stack gap-2 lg:gap-4">
-				<h3>Skills</h3>
-				<p>
-					Specialised in Software Development and Data Analytics, I possess skills required to transform business process and increase business performance
-				</p>
-			</header>
-
-			<div class="gallery">
-				<Grid variant="small">
-					{
-						[
-							'Data Wrangling & ETL (SQL, Python, Power Query)',
-							'Data Processing & Visualisation (Power BI, SQL, DAX)',
-							'Data Management (MS SQL Server, PostgreSQL, MySQL, MongoDB)',
-							'Programming Languages (Python, R, JavaScript, Excel VBA)',
-							'Process Diagramming (Diagrams.net, Lucidchart, Figma)',
-							'Collaboration Tools (MS Office, Jira - Confluence, Git, Jupyter Notebook)'
-						].map((brand) => (
-							<li class="mention-card">
-								<p>{brand}</p>
-							</li>
-						))
-					}
-				</Grid>
-			</div>
-		</section>
-
 		<main class="wrapper stack gap-8">
 			<Hero
 				title="Projects"
@@ -64,60 +35,3 @@ const projects = (await getCollection('projects')).sort(
 		<ContactCTA />
 	</div>
 </BaseLayout>
-
-
-<style>
-	/* Styles for gallery and mention-card */
-	@media (min-width: 50em) {
-		.section {
-			grid-template-columns: repeat(4, 1fr);
-			grid-template-areas: 'header header header header' 'gallery gallery gallery gallery';
-			gap: 5rem;
-		}
-
-		.section.with-cta {
-			grid-template-areas: 'header header header cta' 'gallery gallery gallery gallery';
-		}
-
-		.section-header {
-			grid-area: header;
-			font-size: var(--text-lg);
-		}
-
-		.with-cta .section-header {
-			justify-self: flex-start;
-			text-align: left;
-		}
-
-		.gallery {
-			grid-area: gallery;
-		}
-
-		.cta {
-			grid-area: cta;
-		}
-	}
-
-	.mention-card {
-		display: flex;
-		height: 7rem;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		border: 1px solid var(--gray-800);
-		border-radius: 1.5rem;
-		color: var(--gray-300);
-		background: var(--gradient-subtle);
-		box-shadow: var(--shadow-sm);
-		p {
-			margin: 0 1.5rem;
-		}
-	}
-
-	@media (min-width: 50em) {
-		.mention-card {
-			border-radius: 1.5rem;
-			height: 9.5rem;
-		}
-	}
-</style>
