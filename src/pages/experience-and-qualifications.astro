@@ -96,6 +96,18 @@ import Grid from '../components/Grid.astro';
 			</section>
 
 			<section>
+				<h2 class="section-title">Technical Skills</h2>
+				<div class="content">
+					<p>• <strong>Data Wrangling & ETL</strong>: SQL, Python, Power Query</p>
+					<p>• <strong>Data Processing & Visualisation</strong>: Power BI, SQL, DAX</p>
+					<p>• <strong>Data Management</strong>: MS SQL Server, PostgreSQL, MySQL, MongoDB</p>
+					<p>• <strong>Programming Languages</strong>: Python, R, JavaScript, Excel VBA</p>
+					<p>• <strong>Process Diagramming</strong>: Diagrams.net, Lucidchart, Figma</p>
+					<p>• <strong>Collaboration Tools</strong>: MS Office, Jira - Confluence, Git, Jupyter Notebook</p>
+				</div>
+			</section>
+
+			<section>
 				<h2 class="section-title">How I Create Value</h2>
 				<div class="content">
 					<p>• Reduce manual reporting and operational overhead through automation</p>
@@ -136,6 +148,13 @@ import Grid from '../components/Grid.astro';
 </BaseLayout>
 
 <style>
+	.wrapper {
+		padding-inline: 3rem;
+		.section-title {
+			text-align: center;
+		}
+	}
+
 	.about {
 		display: flex;
 		flex-direction: column;
@@ -145,7 +164,6 @@ import Grid from '../components/Grid.astro';
 			font-size: var(--text-l);
 		}
 	}
-
 
 	img {
 		margin-top: 1.5rem;
@@ -160,6 +178,7 @@ import Grid from '../components/Grid.astro';
 		color: var(--gray-200);
 		p {
   			text-indent: -1.5rem;
+			text-align: justify;
 		}
 		p.indent {
 			text-indent: 0; /* just offset the default indent */
@@ -173,10 +192,6 @@ import Grid from '../components/Grid.astro';
 		grid-column-start: 1;
 		font-size: var(--text-xl);
 		color: var(--gray-0);
-	}
-
-	.content {
-		grid-column: 2 / 4;
 	}
 
 	.content :global(a) {
@@ -193,7 +208,11 @@ import Grid from '../components/Grid.astro';
 	@media (min-width: 50em) {
 		.about {
 			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
+			grid-template-columns: 20% 60% 10% 10%;
+			
+			.content {
+				grid-column: 2 / 4;
+			}
 		}
 
 		.about > :global(:first-child) {
