@@ -4,47 +4,89 @@ publishDate: 2025-08-01 00:00:00
 img: /assets/primaplas/Automated Logistics Data Integration System.png
 img_alt: Automated Logistics Data Integration System
 description: |
-  In this professional project, I automated the manual data entry process to cover all ocean shipping lines handling the logistics workload of a AU$300M revenue company by developing a robust
-  data integration and processing system, resulting in 20% efficiency gain and reaching daily update service level (the most frequency possible)
+  Automated shipment tracking across multiple ocean carriers by building an end-to-end data integration system, eliminating manual updates for a AU$300M revenue company and improving operational efficiency by 20% while achieving daily service-level updates.
 tags:
   - System Integration
   - Automation & Optimisation
   - API and Software
 ---
 
-> This analysis reveals that global wildlife trade is highly concentrated, with over 80% of trade volume driven by just two plant genera and a single importing country.
-
 #### Overview
 
-* **Problem**: fully automated the data update process by Logisitcs staff, which accounts for 20% of their current workload and are prone to be delayed in days or weeks
-* **Approach**: integrate directly with big shipping lines and with third-party data providers to retrieve latest shipment information as soon as possible and automatically update to the internal ERP system
-* **Tools**: Python, Azure Function App, Azure Blob, Azure Logic App, MS SQL Server, SAP, Power Automate, Outlook Integration
-* **Outcome**: completely automated the manual process, maximised service level to provide the most up-to-date information to customers, and equipped with robust monitoring capability for major shipment changes
+**Automated Shipment Update System**
+
+Replaced a fully manual shipment tracking process with an automated, data-driven system that integrates directly with shipping lines and third-party providers, improving operational visibility and reducing workload for logistics teams.
 
 ---
 
-#### Business workflow
+#### Problem
 
+Shipment updates were previously handled manually by the logistics team:
 
+- Manual data entry accounted for ~20% of daily workload  
+- Updates were often delayed by days or even weeks  
+- High dependency on staff to track and follow up shipment statuses  
+- Limited visibility for both internal teams and customers  
 
+This created operational inefficiencies and made it difficult to maintain a consistent service level.
+
+---
+
+#### Before vs After
+
+- **Before:** Manual shipment updates consuming ~20% of logistics workload, with frequent delays  
+- **After:** Fully automated daily updates, reducing manual workload and improving efficiency by 20%  
+
+---
+
+#### Solution
+
+Designed and implemented an automated shipment tracking and update system:
+
+- Integrated directly with major shipping lines and third-party data providers via APIs  
+- Built data pipelines to retrieve and process shipment updates in near real-time  
+- Automated updates into the internal ERP system (SAP)  
+- Implemented monitoring and alerting for key shipment events (e.g. delays)  
+
+The solution replaces manual tracking with a scalable, automated workflow that ensures data consistency and timeliness.
 
 ---
 
 #### Outcomes
 
-
-
----
-
-#### Impact & relevance
-
-* **Efficiency gain & staff satisfaction** by eliminating manual efforts, prevent potential stress and tension from mass updates in a short period
-* **Higher service level**, where daily update is the most frequent update that shipping lines are providing
-* **Better operation monitoring** with daily delayed shipment reports being sent to Logistics operators to spot out early issues
-
-Overall, this project fully automates a manual operation process and brings tremendous benefits for the related parties.
+- Fully eliminated manual shipment update processes  
+- Achieved **daily update service level** (maximum frequency supported by shipping lines)  
+- Provided up-to-date shipment visibility for both operations and customer service teams  
+- Enabled proactive monitoring of delayed shipments  
 
 ---
 
-#### Technical workflow
+#### Impact & Relevance
 
+- ⏱ **20% efficiency gain** by removing manual workload from logistics staff  
+- 📉 Reduced delays and improved reliability of shipment information  
+- 📊 Enhanced operational visibility with automated reporting and alerts  
+- 😊 Improved staff experience by eliminating repetitive, high-pressure manual updates  
+
+This project demonstrates the application of automation and system integration to modernise logistics operations, replacing manual processes with scalable, data-driven workflows.
+
+---
+
+#### Tools & Technologies
+
+- **Data & Integration**: Python, APIs, Azure Function App, Azure Logic App  
+- **Storage & Processing**: Azure Blob Storage, MS SQL Server  
+- **Systems**: SAP (ERP integration)  
+- **Automation & Communication**: Power Automate, Outlook Integration  
+
+---
+
+#### Data and Entity diagram
+
+_(To be added — diagram illustrating manual vs automated process transformation)_
+
+---
+
+#### Technical Architecture diagram
+
+_(To be added — diagram illustrating data flow, integration points, and automation architecture)_
