@@ -1,6 +1,6 @@
 ---
 
-title: CITES data analysis
+title: CITES Data Analysis
 publishDate: 2023-11-01 00:00:00
 img: /assets/CITES-background-image.jpg
 img_alt: Convention on International Trade in Endangered Species of Wild Fauna and Flora

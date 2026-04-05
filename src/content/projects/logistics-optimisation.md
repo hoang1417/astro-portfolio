@@ -1,27 +1,64 @@
 ---
 title: Lazada E-Logistics applications
 publishDate: 2021-06-01 00:00:00
-img: /assets/Lazada-order-details.png
-img_alt: Order detail page of Lazada parcel tracking system
+img: /assets/lazada/Lazada-Logistics.jpg
+img_alt: Lazada Logistics system
 description: |
-  Lazada Group is the leading e-commerce platform across
-  ASEAN countries (Thailand, Singapore, Indonesia, Vietnam,
-  Philippines). It sophisticatedly manages the logistics chain
-  through a comprehensive Transport Management System (TMS)
-  with plenty of modules.
+  At Lazada, I worked on the logistics partner distribution system handling over 5 million parcels daily across six South East Asian countries. The initiatives helped streamline data flow from e-ecommerce platform through downstream logistics operation systems, varying in each country and region, creating efficiencies and saving 27% of variable cost per parcel.
 tags:
-  - Business Analysis
-  - Logistics Optimisation
-  - User Experience
+  - Operation Optimisation
+  - System Integration
+  - Logistics Operation
 ---
 
-From the time an order is confirmed, the logistics system is fully responsible for ensuring the parcel reaches the designated destination in time.
-Above is the web-based UI for buyers to track the order details, including the tracking information.
+> The initiatives helped strengthen Logistics workflow of Lazada Group, created a strong competitive edge for the company to thrive in the upcoming years.
 
-From a user perspective, they can keep track of the parcel movement using Tracking Details page, which shows the details of courier information, latest position and the status of the parcel, 
-which has four main steps (order processing, parcel packed, parcel shipped, and parcel delivered).
+#### Problem
 
-![alt text](/assets/Lazada-tracking-details.png)
+*Definition*: 3PL (Third-Party Logistics) refers to outsourcing logistics processes — such as warehousing, inventory management, picking, packing, and shipping — to external specialists. It allows businesses to focus on core operations while experts handle supply chain fulfillment, often using advanced technology to improve speed and reduce costs
 
-Responsible for core logistics data flow, I owned the parcel state machine (the status list, their possible transitions with conditions) and ensured it was accurately configured across all logistics modules. 
-Moreover, I participated in different projects (e.g. last mile optimisation, sortation process enhancement, recruitment automation) with the goals to improve customer experience, enhance logistics operation performance, digitalise offline processes, and enable new logistics capabilities.
+With a complex 3PL network across countries, Lazada faced several challenges:
+- Inefficient 3PL allocation leading to redundant operation cost
+- Unable to provide higher service offerings to suit customers' needs (e.g. same-day delivery, instant delivery)
+- Unclear delivery statuses, resulting in bad customer rating and low loyalty
+
+All mentioned issues were harmfully affecting the Logisitcs operation in particular and the whole business in general.
+
+---
+
+#### Solution
+
+Analysed current workflows, designed process improvements, and transitioned the whole system to a more robust and optimised Logistics operating system:
+- 3PL allocation is based on an intelligent set of business priorities (cost, time, 3PL preference, etc.)
+- Special delivery requests (same-day delivery, instant delivery) are processed in real-time, ensuring a service level as expected
+- Delivery status is streamlined and fully monitored, giving clear location and status to customers
+
+---
+
+#### Impact
+
+**Operational Impact**
+- Business stakeholders are a strong tool to operate effectively, rather than a old, slow, and ineffective system
+- Unblock new and important develiery services
+- Logistics operators and customer support are fully equipped with sufficient parcel status information
+
+**Business Impact**
+- With optimised operating system, the variable cost per parcel dropped 27%
+- The company was able to offer special delivery services, which is highly demaned by customers
+- 😊 Customers are happier with the parcel tracking system, resulting in an increase of 30% customer satisfaction
+
+---
+
+#### Key contributions
+
+- **Business Process Mapping**: detailed data and entity diagram to document the as-is and to-be system flows
+- **Parcel State Machine**: defined status list and each movement logi with the affected upstream and downstream operations
+- **3PL Integration Workflow**: redesigned core API specification for key 3PL interactions which is scable and adaptable for tens of 3PL providers in each country
+- **Parcel Traacking revamp**: revamped the parcel tracking system to streamline parcel status information to customers
+
+---
+
+#### References
+
+- <a href="https://baike.baidu.com/en/item/Lazada/998284" target="_blank" rel="noopener noreferrer">Lazada (Southeast Asian e-commerce platform)</a>
+- <a href="https://lazbeat.net/lazada-group-ceo-on-driving-ecommerce-evolution-in-southeast-asia/" target="_blank" rel="noopener noreferrer">Smart Logistics provide critical competitive edge for Lazada</a>
