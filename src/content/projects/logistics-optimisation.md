@@ -1,62 +1,69 @@
 ---
-title: Lazada E-Logistics applications
+title: Lazada E-Logistics Applications
 publishDate: 2021-06-01 00:00:00
 img: /assets/lazada/Lazada-Logistics.jpg
 img_alt: Lazada Logistics system
 description: |
-  At Lazada, I worked on the logistics partner distribution system handling over 5 million parcels daily across six South East Asian countries. The initiatives helped streamline data flow from e-ecommerce platform through downstream logistics operation systems, varying in each country and region, creating efficiencies and saving 27% of variable cost per parcel.
+  Led key logistics system optimisation initiatives for a distribution network handling 5M+ parcels daily across Southeast Asia, reducing variable cost per parcel by 27% through data-driven 3PL allocation and workflow redesign.
 tags:
   - Operation Optimisation
   - System Integration
   - Logistics Operation
 ---
 
-> The initiatives helped strengthen Logistics workflow of Lazada Group, created a strong competitive edge for the company to thrive in the upcoming years.
+> These initiatives strengthened Lazada’s logistics capabilities, enabling scalable operations and supporting the company’s competitive growth across Southeast Asia.
 
 #### Problem
 
-*Definition*: 3PL (Third-Party Logistics) refers to outsourcing logistics processes — such as warehousing, inventory management, picking, packing, and shipping — to external specialists. It allows businesses to focus on core operations while experts handle supply chain fulfillment, often using advanced technology to improve speed and reduce costs
+*Definition*: 3PL (Third-Party Logistics) refers to outsourcing logistics operations — including warehousing, inventory management, picking, packing, and delivery — to external providers, enabling scalability and operational efficiency.
 
-With a complex 3PL network across countries, Lazada faced several challenges:
-- Inefficient 3PL allocation leading to redundant operation cost
-- Unable to provide higher service offerings to suit customers' needs (e.g. same-day delivery, instant delivery)
-- Unclear delivery statuses, resulting in bad customer rating and low loyalty
+Operating across multiple countries with diverse 3PL partners, Lazada faced several critical challenges:
+- Inefficient 3PL allocation, leading to unnecessary operational costs  
+- Limited capability to support advanced delivery services (e.g. same-day, instant delivery)  
+- Poor visibility of delivery status, impacting customer experience and trust  
 
-All mentioned issues were harmfully affecting the Logisitcs operation in particular and the whole business in general.
+These issues constrained scalability and negatively impacted both logistics performance and overall business outcomes.
 
 ---
 
 #### Solution
 
-Analysed current workflows, designed process improvements, and transitioned the whole system to a more robust and optimised Logistics operating system:
-- 3PL allocation is based on an intelligent set of business priorities (cost, time, 3PL preference, etc.)
-- Special delivery requests (same-day delivery, instant delivery) are processed in real-time, ensuring a service level as expected
-- Delivery status is streamlined and fully monitored, giving clear location and status to customers
+Conducted end-to-end analysis of existing workflows and led the redesign of a more scalable and data-driven logistics operating system:
+- Implemented intelligent 3PL allocation logic based on cost, delivery speed, and partner performance  
+- Enabled real-time processing of special delivery requests (same-day, instant delivery)  
+- Standardised and enhanced parcel tracking, providing consistent and transparent delivery status across regions  
 
 ---
 
 #### Impact
 
 **Operational Impact**
-- Business stakeholders are a strong tool to operate effectively, rather than a old, slow, and ineffective system
-- Unblock new and important develiery services
-- Logistics operators and customer support are fully equipped with sufficient parcel status information
+- Replaced fragmented and inefficient workflows with a streamlined, scalable logistics system  
+- Enabled rollout of new delivery services across multiple markets  
+- Improved visibility for logistics operators and customer support teams through reliable parcel tracking data  
 
 **Business Impact**
-- With optimised operating system, the variable cost per parcel dropped 27%
-- The company was able to offer special delivery services, which is highly demaned by customers
-- 😊 Customers are happier with the parcel tracking system, resulting in an increase of 30% customer satisfaction
+- Reduced variable cost per parcel by **27%** through optimised 3PL allocation  
+- Enabled new premium delivery services, increasing competitiveness in key markets  
+- Improved customer satisfaction by **30%** through enhanced tracking transparency  
 
 ---
 
-#### Key contributions
+#### Key Contributions
 
-- **Business Process Mapping**: detailed data and entity diagram to document the as-is and to-be system flows
-- **Parcel State Machine**: defined status list and each movement logi with the affected upstream and downstream operations
-- **3PL Integration Workflow**: redesigned core API specification for key 3PL interactions which is scable and adaptable for tens of 3PL providers in each country
-- **Parcel Traacking revamp**: revamped the parcel tracking system to streamline parcel status information to customers
+- **Business Process Mapping**: Developed detailed as-is and to-be process flows and data models to align stakeholders across regions  
+- **Parcel State Machine Design**: Defined standardised parcel statuses and transition logic across upstream and downstream systems  
+- **3PL Integration Framework**: Led redesign of` API specifications to support scalable integration with multiple logistics partners across countries  
+- **Parcel Tracking Revamp**: Delivered a unified tracking experience with improved accuracy and real-time updates for customers  
 
 ---
+
+#### Key Decisions
+
+- Prioritised a rule-based allocation model over manual assignment to ensure scalability across markets  
+- Standardised parcel status definitions to eliminate inconsistencies between regional systems  
+- Designed API-first integration to support rapid onboarding of new 3PL partners  
+
 
 #### References
 
