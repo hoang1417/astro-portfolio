@@ -38,14 +38,14 @@ Conducted end-to-end analysis of existing workflows and led the redesign of a mo
 #### Impact
 
 **Operational Impact**
-- Replaced fragmented and inefficient workflows with a streamlined, scalable logistics system  
-- Enabled rollout of new delivery services across multiple markets  
-- Improved visibility for logistics operators and customer support teams through reliable parcel tracking data  
+- 🚀 Replaced fragmented workflows with a streamlined, scalable logistics system  
+- ⚙️ Enabled rollout of new delivery services across multiple markets  
+- 👁️ Improved visibility for logistics operators and customer support with reliable parcel tracking  
 
 **Business Impact**
-- Reduced variable cost per parcel by **27%** through optimised 3PL allocation  
-- Enabled new premium delivery services, increasing competitiveness in key markets  
-- Improved customer satisfaction by **30%** through enhanced tracking transparency  
+- 💰 Reduced variable cost per parcel by **27%** through optimised 3PL allocation  
+- 📦 Enabled premium delivery services, strengthening competitiveness in key markets  
+- 😊 Increased customer satisfaction by **30%** through transparent and consistent tracking experience  
 
 ---
 
