@@ -35,7 +35,7 @@ This created operational inefficiencies and made it difficult to maintain a cons
 #### Before vs After
 
 - **Before:** Manual shipment updates consuming ~20% of logistics workload, with frequent delays  
-- **After:** Fully automated daily updates, reducing manual workload and improving efficiency by 20%  
+- **After:** Fully automated daily updates and notifications, reducing manual workload and improving efficiency by 20%  
 
 ---
 
@@ -43,7 +43,7 @@ This created operational inefficiencies and made it difficult to maintain a cons
 
 Designed and implemented an automated shipment tracking and update system:
 
-- Integrated directly with major shipping lines and third-party data providers via APIs  
+- Integrated directly with major shipping lines (OOCL, Maersk) and third-party data providers (SeaRate, Shipsgo) via APIs  
 - Built data pipelines to retrieve and process shipment updates in near real-time  
 - Automated updates into the internal ERP system (SAP)  
 - Implemented monitoring and alerting for key shipment events (e.g. delays)  
@@ -74,19 +74,21 @@ This project demonstrates the application of automation and system integration t
 
 #### Tools & Technologies
 
-- **Data & Integration**: Python, APIs, Azure Function App, Azure Logic App  
+- **Data & Integration**: SQL, Python, Azure Function App
 - **Storage & Processing**: Azure Blob Storage, MS SQL Server  
-- **Systems**: SAP (ERP integration)  
-- **Automation & Communication**: Power Automate, Outlook Integration  
+- **Systems**: SAP (ERP integration), API integration
+- **Automation & Communication**: Azure Logic App, Outlook Emails, Teams Notifications
 
 ---
 
-#### Data and Entity diagram
+#### Business Workflow
 
-_(To be added — diagram illustrating manual vs automated process transformation)_
+![Business Workflow Transformation](/assets/primaplas/Business-Workflow-Transformation.png)
 
 ---
 
-#### Technical Architecture diagram
+#### Technical Architecture
 
-_(To be added — diagram illustrating data flow, integration points, and automation architecture)_
+![Automated Shipment Update Architecture](/assets/primaplas/Automated-Shipment-Update-Architecture.png)
+
+This architecture enables fully automated, daily shipment updates by integrating multiple external data sources into a centralised processing and ERP update pipeline.
