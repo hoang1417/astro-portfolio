@@ -1,10 +1,10 @@
 ---
-title: Lazada E-Logistics Applications
+title: Lazada E-Logistics System
 publishDate: 2021-06-01 00:00:00
 img: /assets/lazada/Lazada-Logistics.jpg
 img_alt: Lazada Logistics system
 description: |
-  Led key logistics system optimisation initiatives for a distribution network handling 5M+ parcels daily across Southeast Asia, reducing variable cost per parcel by 27% through data-driven 3PL allocation and workflow redesign.
+  Drove major logistics system optimisation initiatives for Lazada’s network, processing over 5 million parcels daily and supporting ~US$21 billion GMV across Southeast Asia, achieving a 27% reduction in variable cost per parcel via data-driven 3PL allocation and workflow redesign.
 tags:
   - Operation Optimisation
   - System Integration
@@ -32,6 +32,10 @@ Conducted end-to-end analysis of existing workflows and led the redesign of a mo
 - Implemented intelligent 3PL allocation logic based on cost, delivery speed, and partner performance  
 - Enabled real-time processing of special delivery requests (same-day, instant delivery)  
 - Standardised and enhanced parcel tracking, providing consistent and transparent delivery status across regions  
+
+<p align="center">
+  <img src="/assets/lazada/Lazada-Parcel-Tracking.jpg" alt="Lazada Parcel Tracking" width="40%" style="height: auto;">
+</p>
 
 ---
 
@@ -64,8 +68,11 @@ Conducted end-to-end analysis of existing workflows and led the redesign of a mo
 - Standardised parcel status definitions to eliminate inconsistencies between regional systems  
 - Designed API-first integration to support rapid onboarding of new 3PL partners  
 
+---
 
 #### References
 
 - <a href="https://baike.baidu.com/en/item/Lazada/998284" target="_blank" rel="noopener noreferrer">Lazada (Southeast Asian e-commerce platform)</a>
 - <a href="https://lazbeat.net/lazada-group-ceo-on-driving-ecommerce-evolution-in-southeast-asia/" target="_blank" rel="noopener noreferrer">Smart Logistics provide critical competitive edge for Lazada</a>
+- Full Logistics flow:
+![Logistics Flow](/assets/lazada/Logistics-flow.jpg)
