@@ -4,7 +4,7 @@ publishDate: 2021-06-01 00:00:00
 img: /assets/lazada/Lazada-Logistics.jpg
 img_alt: Lazada Logistics system
 description: |
-  Drove major logistics system optimisation initiatives for Lazada’s network, processing over 5 million parcels daily and supporting ~US$21 billion GMV across Southeast Asia, achieving a 27% reduction in variable cost per parcel via data-driven 3PL allocation and workflow redesign.
+  Led major logistics optimisation initiatives for Lazada’s e-commerce network across Southeast Asia, supporting over 5 million parcels daily and ~US$21 billion GMV. Achieved a 27% reduction in variable cost per parcel and 30% higher customer satisfaction through intelligent 3PL allocation and end-to-end workflow redesign.
 tags:
   - Operation Optimisation
   - System Integration
@@ -67,6 +67,13 @@ Conducted end-to-end analysis of existing workflows and led the redesign of a mo
 - Prioritised a rule-based allocation model over manual assignment to ensure scalability across markets  
 - Standardised parcel status definitions to eliminate inconsistencies between regional systems  
 - Designed API-first integration to support rapid onboarding of new 3PL partners  
+
+---
+
+#### Tools
+- Data Analysis: SQL, Excel/Power BI
+- Process Modelling: Draw.io, Lucidchart
+- Others: API design, State Machine design, etc.
 
 ---
 
