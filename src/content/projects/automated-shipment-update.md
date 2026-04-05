@@ -11,15 +11,7 @@ tags:
   - API and Software
 ---
 
-> This project replaced a fragmented, manual shipment tracking process with a fully integrated, automated system that delivers reliable, daily shipment visibility at scale — demonstrating how automation and system integration can directly improve operational efficiency and service quality in logistics.
-
-#### Overview
-
-**Automated Shipment Update System**
-
-Replaced a fully manual shipment tracking process with an automated, data-driven system that integrates directly with shipping lines and third-party providers, improving operational visibility and reducing workload for logistics teams across high-volume shipment operations (~4,000 shipments annually).
-
----
+> This project replaced a fragmented, manual shipment tracking process with a fully integrated, automated system that delivers reliable, daily shipment visibility at scale — demonstrating how automation and system integration can directly improve operational efficiency and service quality in logistics
 
 #### Problem
 
@@ -46,8 +38,8 @@ This created operational inefficiencies and made it difficult to maintain a cons
 Designed and implemented a scalable, end-to-end shipment tracking and automation system to replace fragmented manual processes:
 
 - Implemented a **hybrid integration approach (API + file-based ingestion)** to accommodate varying capabilities across major shipping lines (OOCL, Maersk) and third-party providers (SeaRates, ShipsGo)  
-- Built automated data pipelines to retrieve, validate, and process high-volume shipment status updates in near real-time  
-- Designed a centralised processing layer to standardise data and ensure consistency before updating the internal ERP system (SAP)  
+- Designed and built automated data pipelines to retrieve, validate, and process high-volume shipment status updates in near real-time  
+- Handled varying data formats and update frequencies across multiple shipping providers, ensuring consistent and standardised data before ERP integration
 - Automated ERP updates to eliminate manual data entry and reduce dependency on logistics staff  
 - Developed monitoring and alerting mechanisms to detect key shipment events (e.g. delays) and trigger proactive notifications  
 
@@ -89,4 +81,4 @@ This architecture ensures reliable, scalable, and timely shipment updates across
 
 ![Automated Shipment Update Architecture](/assets/primaplas/Automated-Shipment-Update-Architecture.png)
 
-This architecture enables fully automated, daily shipment updates by integrating multiple external data sources into a centralised processing and ERP update pipeline.
+This architecture enables fully automated, daily shipment updates by integrating multiple external data sources into a centralised processing and ERP update pipeline, ensuring scalability, reliability, and data consistency across systems.
