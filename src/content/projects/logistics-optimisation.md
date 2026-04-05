@@ -57,8 +57,9 @@ Conducted end-to-end analysis of existing workflows and led the redesign of a mo
 
 - **Business Process Mapping**: Developed detailed as-is and to-be process flows and data models to align stakeholders across regions  
 - **Parcel State Machine Design**: Defined standardised parcel statuses and transition logic across upstream and downstream systems  
-- **3PL Integration Framework**: Led redesign of` API specifications to support scalable integration with multiple logistics partners across countries  
+- **3PL Integration Framework**: Led redesign of API specifications to support scalable integration with multiple logistics partners across countries  
 - **Parcel Tracking Revamp**: Delivered a unified tracking experience with improved accuracy and real-time updates for customers  
+- **Cross-Regional Standardisation**: Aligned stakeholders across multiple countries to standardise logistics workflows and system behaviours
 
 ---
 
