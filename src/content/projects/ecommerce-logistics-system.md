@@ -33,9 +33,8 @@ Conducted end-to-end analysis of existing workflows and led the redesign of a mo
 - Enabled real-time processing of special delivery requests (same-day, instant delivery)  
 - Standardised and enhanced parcel tracking, providing consistent and transparent delivery status across regions  
 
-<p align="center">
-  <img src="/assets/lazada/Lazada-Parcel-Tracking.jpg" alt="Lazada Parcel Tracking" width="40%" style="height: auto;">
-</p>
+![Logistics System Diagram](/assets/lazada/logistics-system-diagram.png)
+
 
 ---
 
@@ -82,5 +81,10 @@ Conducted end-to-end analysis of existing workflows and led the redesign of a mo
 
 - <a href="https://baike.baidu.com/en/item/Lazada/998284" target="_blank" rel="noopener noreferrer">Lazada (Southeast Asian e-commerce platform)</a>
 - <a href="https://lazbeat.net/lazada-group-ceo-on-driving-ecommerce-evolution-in-southeast-asia/" target="_blank" rel="noopener noreferrer">Smart Logistics provide critical competitive edge for Lazada</a>
+- Parcel Tracking UI:
+<p align="center">
+  <img src="/assets/lazada/Lazada-Parcel-Tracking.jpg" alt="Lazada Parcel Tracking" width="40%" style="height: auto;">
+</p>
+
 - Full Logistics flow:
 ![Logistics Flow](/assets/lazada/Logistics-flow.jpg)
