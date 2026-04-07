@@ -1,8 +1,8 @@
 ---
 title: Lazada E-Logistics System
 publishDate: 2021-06-01 00:00:00
-img: /assets/lazada/Lazada-Logistics.jpg
-img_alt: Lazada Logistics system
+img: /assets/lazada/Logistics-Optimisation-and-Impacts.png
+img_alt: Logistics Optimisation and Impacts
 description: |
   Led major logistics optimisation initiatives for Lazada’s e-commerce network across Southeast Asia, supporting over 5 million parcels daily and ~US$21 billion GMV. Achieved a 27% reduction in variable cost per parcel and 30% higher customer satisfaction through intelligent 3PL allocation and end-to-end workflow redesign.
 tags:
