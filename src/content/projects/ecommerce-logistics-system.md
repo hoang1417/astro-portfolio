@@ -1,5 +1,5 @@
 ---
-title: Lazada E-Logistics System
+title: E-commerce Logistics System
 publishDate: 2021-06-01 00:00:00
 img: /assets/lazada/Logistics-Optimisation-and-Impacts.png
 img_alt: Logistics Optimisation and Impacts
