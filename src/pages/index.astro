@@ -43,6 +43,18 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 			</header>
 
 			<Skills />
+
+			<div class="selected-work">
+				<header >
+					<h4>Selected Work</h4>
+					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+				</header>
+
+				<CallToAction href="/projects/">
+					View All
+					<Icon icon="arrow-right" size="1.2em" />
+				</CallToAction>
+			</div>
 		</div>
 
 		<ContactCTA />
@@ -68,6 +80,10 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
 	}
+	
+	.selected-work a {
+		display: inline-flex important!;
+	}
 
 	@media (min-width: 50em) {
 		.hero {
@@ -87,6 +103,10 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 			aspect-ratio: 3 / 4;
 			border-radius: 4.5rem;
 			object-fit: cover;
+		}
+
+		.selected-work {
+			padding-inline: 2.5rem;
 		}
 	}
 
@@ -150,10 +170,6 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 		.with-cta .section-header {
 			justify-self: flex-start;
 			text-align: left;
-		}
-
-		.cta {
-			grid-area: cta;
 		}
 	}
 </style>
