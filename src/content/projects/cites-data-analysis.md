@@ -42,7 +42,7 @@ Illustrating endangered species trade quantity, Figure 1 shows that trade volume
 
 A key observation is the **high volatility in trade volume**, with more than 1,000M kg recorded in 2013, followed by a sharp drop to approximately 150M kg in 2014.
 
-![Endangered species trade quantities worldwide](/assets/CITES-endangered-species.png)
+![Endangered species trade quantities worldwide](/assets/cites/CITES-endangered-species.png)
 Figure 1. Endangered species trade quantities worldwide
 
 This sharp decline and partial recovery in 2015 indicate that global wildlife trade is **not stable and may be influenced by external factors such as regulation, market demand, or reporting changes**.
@@ -63,7 +63,7 @@ At the country level, imports are also heavily concentrated:
 * The Netherlands follows with ~5%
 * Other countries contribute only marginally
 
-![Appendix II Species imported and Countries importing worldwide](/assets/CITES-imported-species.png)
+![Appendix II Species imported and Countries importing worldwide](/assets/cites/CITES-imported-species.png)
 Figure 2. Appendix II Species imported and Countries importing worldwide.
 
 This reveals a **significant concentration risk**, where global trade volume is dominated by specific species and a single importing country.
@@ -78,7 +78,7 @@ Based on the above findings, a hypothesis was formed:
 
 To validate this, a treemap analysis was performed to examine the relationship between **importing countries, species, and product forms (terms)**.
 
-![Importing countries divided by Appendix II species and term distribution](/assets/CITES-imported-species-by-terms.png)
+![Importing countries divided by Appendix II species and term distribution](/assets/cites/CITES-imported-species-by-terms.png)
 Figure 3. Importing countries divided by Appendix II species and term distribution
 
 The results confirm a **strong correlation between Switzerland and the two dominant genera (Gonystylus and Euphorbia)**, primarily in the form of:
