@@ -5,6 +5,8 @@ import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import CallToAction from '../components/CallToAction.astro';
+import Icon from '../components/Icon.astro';
 
 const projects = (await getCollection('projects')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
@@ -16,12 +18,17 @@ const projects = (await getCollection('projects')).sort(
 	description="Learn about Henry Le's most featured projects"
 >
 	<div class="stack gap-20">
-		<main class="wrapper stack gap-8">
+		<main class="wrapper stack gap-2">
 			<Hero
 				title="Projects"
-				tagline="Below are some of my featured projects. Click on any to learn more."
+				tagline=""
 				align="start"
 			/>
+			
+			<p style="font-size: 1.25rem;">
+				Each project is unique, presenting its own challenges and opportunities for growth and innovation. Below are some of my most featured projects that demonstrate my expertise in business analysis, data analysis, and software implementation to drive digital transformation and operational efficiency.
+			</p>
+			
 			<Grid variant="offset">
 				{
 					projects.map((project) => (
@@ -31,7 +38,52 @@ const projects = (await getCollection('projects')).sort(
 					))
 				}
 			</Grid>
+			
+			<div class="about-me">
+				<h4> Learn more </h4>
+				<p>
+					I hope you find the projects interesting and insightful. If you would like to learn more about my background, experience, and how I can help drive digital transformation and operational efficiency for your business, please feel free to reach out or explore the About Me section.
+				</p>
+				
+				<div class="about-me-cta" style="margin-top: 1rem;">
+					<CallToAction href="/experience-and-qualifications/">
+						About Me
+						<Icon icon="arrow-right" size="1.2em" />
+					</CallToAction>
+				</div>
+			</div>
 		</main>
+		
 		<ContactCTA />
 	</div>
 </BaseLayout>
+
+
+<style>
+	.about-me {
+		padding-top: 2rem;
+		p {
+			text-align: justify;
+		}
+		.about-me-cta {
+			a {
+				display: flow;
+			}
+		}
+	}
+	
+	@media (min-width: 50em) {
+		.about-me {
+			p {
+				font-size: 1.25rem;
+				text-align: justify;
+			}
+			.about-me-cta {
+				a {
+					display: inline-flex;
+				}
+			}
+		}
+	}
+
+</style>
