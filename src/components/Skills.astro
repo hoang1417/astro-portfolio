@@ -5,18 +5,18 @@ import Icon from './Icon.astro';
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Process Digitalisation</h2>
-		<p>Digitalise key business activities as the cornerstone for the business digital foundation.</p>
+		<h3>Process Digitalisation</h3>
+		<p>Set the foundation for digital transformation by identifying and digitalising key business activities.</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Automation & Optimisation</h2>
-		<p>Automate and optimise business processes to maximise their effectiveness and efficiency.</p>
+		<h3>Automation & Optimisation</h3>
+		<p>Save operation time to focus on higher-value activities, improving overall productivity, and creating competitive advantages.</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Data-Informed Decision Making</h2>
-		<p>Provide up-to-date operation information and insights to support decision making.</p>
+		<h3>Result-Oriented</h3>
+		<p>Deliver measurable results that drive business value and support strategic objectives.</p>
 	</div>
 </section>
 
@@ -28,33 +28,33 @@ import Icon from './Icon.astro';
 		background-color: var(--gray-999_40);
 		box-shadow: var(--shadow-sm);
 	}
-
+	
 	.skills {
 		display: flex;
 		flex-direction: column;
 		gap: 3rem;
 	}
-
-	.skills h2 {
-		font-size: var(--text-lg);
+	
+	.skills h3 {
+		font-size: var(--text-l);
 	}
-
+	
 	.skills p {
 		color: var(--gray-400);
 	}
-
+	
 	@media (min-width: 50em) {
 		.box {
 			border-radius: 1.5rem;
 			padding: 2.5rem;
 		}
-
+		
 		.skills {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 5rem;
 		}
-
+		
 		.skills h2 {
 			font-size: var(--text-2xl);
 		}

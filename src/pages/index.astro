@@ -31,7 +31,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 			<header class="hero">
 				<Hero
 					title="Hi, I am Henry Le"
-					tagline="Technical Business Analyst specialising in automation, data reporting, and ERP optimisation — helping operations teams eliminate manual processes, streamline workflows, and make faster, data-driven decisions."
+					tagline="A Technical Business Analyst specialising in automation, data reporting, and ERP optimisation — helping operation teams digitalise manual processes, streamline workflows, automate and optimise business processes."
 					align="start"
 				>
 					<div class="roles">
@@ -41,22 +41,24 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 					</div>
 				</Hero>
 			</header>
-
+			
 			<Skills />
-
-			<div class="selected-work">
-				<header >
-					<h4>Selected Work</h4>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
-				</header>
-
-				<CallToAction href="/projects/">
-					View All
-					<Icon icon="arrow-right" size="1.2em" />
-				</CallToAction>
+			
+			<div class="quick-bio">
+				<p>
+					Throughout my career, I have worked on various projects across different industries, applying my expertise in business analysis, data analysis, and software implementation to drive digital transformation and operational efficiency.
+					With an exceptional passion for solving complex problems and driving innovation, I strive to deliver impactful solutions that drive business value.
+				</p>
+				
+				<div class="selected-work" style="margin-top: 1rem;">
+					<CallToAction href="/projects/">
+						View Projects
+						<Icon icon="arrow-right" size="1.2em" />
+					</CallToAction>
+				</div>
 			</div>
 		</div>
-
+		
 		<ContactCTA />
 	</div>
 </BaseLayout>
@@ -81,8 +83,10 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 		box-shadow: var(--shadow-md);
 	}
 	
-	.selected-work a {
-		display: inline-flex important!;
+	.selected-work {
+		a {
+			display: inline-flex;
+		}
 	}
 
 	@media (min-width: 50em) {
@@ -105,8 +109,11 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 			object-fit: cover;
 		}
 
-		.selected-work {
+		.quick-bio {
 			padding-inline: 2.5rem;
+			p {
+				font-size: 1.25rem;
+			}
 		}
 	}
 
