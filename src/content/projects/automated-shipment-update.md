@@ -1,7 +1,7 @@
 ---
 title: Automated Shipment Update
 publishDate: 2025-08-01 00:00:00
-img: /assets/primaplas/Automated Logistics Data Integration System.png
+img: /assets/primaplas/Automated-Shipment-System.png
 img_alt: Automated Logistics Data Integration System
 description: |
   Automated shipment tracking across multiple ocean carriers by building an end-to-end data integration system, eliminating manual updates for a AU$300M revenue company with over 4,000 shipments every year and improving operational efficiency by 20% while achieving daily service-level updates.
