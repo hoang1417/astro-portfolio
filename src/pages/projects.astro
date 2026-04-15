@@ -39,13 +39,13 @@ const projects = (await getCollection('projects')).sort(
 				}
 			</Grid>
 			
-			<div class="about-me">
+			<div class="cta-section">
 				<h4> Learn more </h4>
 				<p>
 					I hope you find the projects interesting and insightful. If you would like to learn more about my background, experience, and how I can help drive digital transformation and operational efficiency for your business, please feel free to reach out or explore the About Me section.
 				</p>
 				
-				<div class="about-me-cta" style="margin-top: 1rem;">
+				<div class="cta-button-wrapper" style="margin-top: 1rem;">
 					<CallToAction href="/experience-and-qualifications/">
 						About Me
 						<Icon icon="arrow-right" size="1.2em" />
@@ -60,12 +60,12 @@ const projects = (await getCollection('projects')).sort(
 
 
 <style>
-	.about-me {
+	.cta-section {
 		padding-top: 2rem;
 		p {
 			text-align: justify;
 		}
-		.about-me-cta {
+		.cta-button-wrapper {
 			a {
 				display: flow;
 			}
@@ -73,12 +73,12 @@ const projects = (await getCollection('projects')).sort(
 	}
 	
 	@media (min-width: 50em) {
-		.about-me {
+		.cta-section {
 			p {
 				font-size: 1.25rem;
 				text-align: justify;
 			}
-			.about-me-cta {
+			.cta-button-wrapper {
 				a {
 					display: inline-flex;
 				}

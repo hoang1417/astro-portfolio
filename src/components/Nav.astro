@@ -2,6 +2,7 @@
 import Icon from './Icon.astro';
 import type { iconPaths } from './IconPaths';
 import ThemeToggle from './ThemeToggle.astro';
+import Favicon from '../../public/favicon.svg';
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
@@ -28,9 +29,10 @@ const isCurrentPage = (href: string) => {
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
-			<Icon icon="broadcast" color="var(--accent-regular)" size="1.6em" gradient />
+			<Favicon width="1.3em" height="1.6em" style="color: var(--accent-regular)" />
 			Henry Le
 		</a>
+
 		<menu-button>
 			<template>
 				<button class="menu-button" aria-expanded="false">
