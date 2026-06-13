@@ -93,8 +93,10 @@ import Icon from './Icon.astro';
 
 			// === Initialize with saved preference (default = light) ===
 			const savedTheme = localStorage.getItem(STORAGE_KEY);
-			const shouldBeDark = savedTheme === 'dark';   // If nothing saved → light (false)
-
+			let shouldBeDark = true; // Default to dark mode if no preference is saved
+			if (savedTheme !== null) {
+				shouldBeDark = savedTheme === 'dark';
+			}
 			setTheme(shouldBeDark);
 		}
 	}
