@@ -159,7 +159,7 @@ import CallToAction from '../components/CallToAction.astro';
 			
 		</main>
 
-		<div class="lets-connect wrapper stack gap-2" style="padding: 2rem 0 5rem 0;">
+		<div class="lets-connect stack gap-2">
 			<div class="cta-section">
 				<h4> Let's Connect </h4>
 				<p>
@@ -189,23 +189,23 @@ import CallToAction from '../components/CallToAction.astro';
 			text-align: center;
 		}
 	}
-
+	
 	.about {
 		display: flex;
 		flex-direction: column;
 		gap: 1rem 3.5rem;
-
+	
 		.tagline {
 			font-size: var(--text-l);
 		}
 	}
-
+	
 	img {
 		margin-top: 1.5rem;
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
 	}
-
+	
 	section {
 		display: flex;
 		flex-direction: column;
@@ -213,7 +213,7 @@ import CallToAction from '../components/CallToAction.astro';
 		color: var(--gray-200);
 		p {
 			text-indent: -1.5rem;
-			text-align: justify;
+			text-align: left;
 		}
 		p.indent {
 			text-indent: 0; /* just offset the default indent */
@@ -225,24 +225,41 @@ import CallToAction from '../components/CallToAction.astro';
 			padding-top: 0.5rem;
 		}
 	}
-
+	
+	.lets-connect {
+		padding-inline: 1.5rem;
+	}
+	
+	@media (min-width: 50em) {
+		section {
+			p {
+				text-indent: -1.5rem;
+				text-align: justify;
+			}
+		}
+		
+		.lets-connect {
+			padding-inline: 3rem
+		}
+	}
+	
 	.section-title {
 		grid-column-start: 1;
 		font-size: var(--text-xl);
 		color: var(--gray-0);
 	}
-
+	
 	.content :global(a) {
 		text-decoration: 1px solid underline transparent;
 		text-underline-offset: 0.25em;
 		transition: text-decoration-color var(--theme-transition);
 	}
-
+	
 	.content :global(a:hover),
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
 	}
-
+	
 	@media (min-width: 50em) {
 		.about {
 			display: grid;
@@ -252,17 +269,17 @@ import CallToAction from '../components/CallToAction.astro';
 				grid-column: 2 / 4;
 			}
 		}
-
+		
 		.about > :global(:first-child) {
 			grid-column-start: 2;
 		}
-
+		
 		section {
 			display: contents;
 			font-size: var(--text-lg);
 		}
 	}
-
+	
 	.cta-section {
 		padding-top: 2rem;
 		p {
